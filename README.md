@@ -1,14 +1,20 @@
-# doctorbambu-com-app
+﻿# 🎋 Doctor Bambu: The Spirit (doctorbambu.com)
 
-## Ecosystem Alignment
-This application operates under the **Four-Tier Architecture** of the Doctor Bambu Ecosystem:
+## 🏛️ Imperial Sovereignty Statement
+This repository is a **Canonical Knowledge Artifact** and part of the **Doctor Bambu' Human-Centered AI Health, Wellbeing & Sustainable Lifestyle Ecosystem**. 
 
-1. **Infrastructure**: Google AI Triune (Gemini, Antigravity, Colab AI)
-2. **Engine**: React/Astro/Node.js
-3. **Sovereign**: doctorbambu-com-app
-4. **Governance**: RODES Compliance / Imperial Throne
+### ⚡ The Wrangler Directive
+In accordance with the **KISS Directive** (Keep It Simple & Sustainable), this domain is deployed via the **Wrangler Direct Pipe**. This repository serves as a **Sovereign SEO Monument** and a passive archive of the intellectual property contained herein.
 
-This application acknowledges its alignment with the [Bambu Codex](./bambu-codex.md).
+## 🌉 The CCM-eCBome Bridge
+This project architects the link between **Classical Chinese Medicine (CCM)** and **Endocannabinoidome (eCBome)** science. We are building the missing medical theory that bridges ancient clinical wisdom with modern ECS biological sciences.
 
+### 💎 The 8 Treasures Development Team
+- **Astro**: The Framework (Core Engine)
+- **React**: The Muscle (Interactive UI)
+- **Cloudflare**: The Nervous System (Global Edge)
+- **Wrangler**: The Teleporter (Direct Deployment)
 
-Architect: doctorbambu.com | Governance: doctorbambuenterprises.com
+---
+© 2026 Doctor Bambu Enterprises, Inc. | Delaware C-Corp
+*Epistemic Integrity • Sovereignty Shield • Bio-Digital Harmony*
