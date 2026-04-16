@@ -1,10 +1,13 @@
 ﻿# 🎋 Doctor Bambu: The Spirit (doctorbambu.com)
 
-## 🏛️ Imperial Sovereignty Statement
-This repository is a **Canonical Knowledge Artifact** and part of the **Doctor Bambu' Human-Centered AI Health, Wellbeing & Sustainable Lifestyle Ecosystem**. 
+## 🏛️ The Portal to Bambu Grove OS
+This domain serves as the **Primary Command Portal** for the **Bambu Grove OS**. It is the central interface for the interactive ePubs and the fleet of **Personalized Bambu Grove AI Agents** that comprise the ecosystem.
+
+## 🏯 Imperial Sovereignty Statement
+This repository is a **Canonical Knowledge Artifact**. 
 
 ### ⚡ The Wrangler Directive
-In accordance with the **KISS Directive** (Keep It Simple & Sustainable), this domain is deployed via the **Wrangler Direct Pipe**. This repository serves as a **Sovereign SEO Monument** and a passive archive of the intellectual property contained herein.
+In accordance with the **KISS Directive** (Keep It Simple & Sustainable), this domain is deployed via the **Wrangler Direct Pipe**. This repository serves as a **Sovereign SEO Monument** and a passive archive.
 
 ## 🌉 The CCM-eCBome Bridge
 This project architects the link between **Classical Chinese Medicine (CCM)** and **Endocannabinoidome (eCBome)** science. We are building the missing medical theory that bridges ancient clinical wisdom with modern ECS biological sciences.
