@@ -1,0 +1,18 @@
+{
+  "name": "Bambu Spirit",
+  "short_name": "Spirit",
+  "description": "The Philosophical Heart of the Doctor Bambu Ecosystem",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#00ff88",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

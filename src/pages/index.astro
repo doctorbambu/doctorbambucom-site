@@ -1,22 +1,88 @@
 ---
-const domainName = "doctorbambu-com-app";
+import CanvasFrame from '../components/CanvasFrame.astro';
+import TriuneStatus from '../components/atoms/TriuneStatus';
+import NavDock from '../components/atoms/NavDock';
 ---
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>{domainName} | Doctor Bambu Ecosystem</title>
-		<style>
-			body { background: #0a0f0a; color: #d1ffd1; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-			.card { border: 1px solid #1b4d1b; padding: 2rem; border-radius: 1rem; text-align: center; box-shadow: 0 0 20px rgba(0,255,0,0.1); }
-			h1 { color: #4ade80; }
-		</style>
-	</head>
-	<body>
-		<div class="card">
-			<h1>{domainName}</h1>
-			<p>Status: Biophotonic Foundation Initialized</p>
-			<p><i>The Bambu Groove is active.</i></p>
-		</div>
-	</body>
-</html>
+
+<CanvasFrame>
+  <div slot="status-bar">
+    <TriuneStatus client:load />
+  </div>
+
+  <div slot="main-stage" class="welcome-container">
+    <div class="glass-shield">
+      
+      <div class="logo-wrapper">
+        <img src="/assets/images/logo.svg" alt="Doctor Bambu Logo" class="db-logo" />
+      </div>
+
+      <h1 class="imperial-title">Welcome to Doctor Bambu' Web App</h1>
+      <div class="divider"></div>
+      
+      <p class="spirit-subtitle">The home of the Bambu Grove OS</p>
+      
+      <p class="ecosystem-tag">
+        The Human-Centered AI - Health, Wellbeing & Sustainable Lifestyle Ecosystem
+      </p>
+      
+    </div>
+  </div>
+
+  <div slot="nav-dock">
+    <NavDock client:load />
+  </div>
+</CanvasFrame>
+
+<style>
+  .welcome-container {
+    display: flex; justify-content: center; align-items: center;
+    width: 100%; height: 100%;
+  }
+
+  .glass-shield {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(244, 241, 232, 0.45);
+    backdrop-filter: blur(15px);
+    border-radius: 24px;
+    border: 1px solid rgba(155, 126, 75, 0.25);
+    max-width: 650px;
+    box-shadow: 0 30px 60px rgba(74, 59, 40, 0.08);
+  }
+
+  .logo-wrapper { margin-bottom: 2rem; }
+  .db-logo { width: 100px; height: auto; }
+
+  .imperial-title {
+    font-family: serif;
+    color: var(--deep-shadow);
+    font-size: 2.2rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .divider { width: 100px; height: 1px; background: var(--imperial-gold); margin: 2rem auto; }
+
+  .spirit-subtitle {
+    color: var(--imperial-gold);
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .ecosystem-tag {
+    font-size: 0.9rem;
+    color: var(--deep-shadow);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12rem;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 600px) {
+    .glass-shield { width: 85%; padding: 2rem 1rem; }
+    .imperial-title { font-size: 1.4rem; }
+    .spirit-subtitle { font-size: 1.1rem; }
+    .ecosystem-tag { font-size: 0.65rem; }
+  }
+</style>

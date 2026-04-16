@@ -1,0 +1,73 @@
+---
+// src/components/CanvasFrame.astro
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Doctor Bambu - Bambu Grove OS</title>
+  </head>
+  <body>
+    <div class="os-viewport">
+      <div class="os-skin-layer"></div>
+      <div class="os-ui-layer">
+        <header class="os-status-bar">
+          <slot name="status-bar" />
+        </header>
+        <main class="os-app-stage">
+          <slot name="main-stage" />
+        </main>
+        <footer class="os-nav-dock">
+          <slot name="nav-dock" />
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    --parchment-base: #F4F1E8;
+    --imperial-gold: #9B7E4B;
+    --deep-shadow: #4A3B28;
+  }
+
+  html, body {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+    background-color: var(--parchment-base);
+  }
+
+  .os-viewport {
+    position: relative;
+    width: 100vw; height: 100vh;
+  }
+
+  .os-skin-layer {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('/assets/vectors/bambu-master_v1.svg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .os-ui-layer {
+    position: relative;
+    width: 100%; height: 100%;
+    z-index: 10;
+    display: grid;
+    grid-template-rows: 60px 1fr 100px;
+    grid-template-areas: "status" "stage" "dock";
+  }
+
+  .os-status-bar { grid-area: status; padding: 0 20px; display: flex; align-items: center; justify-content: flex-end; }
+  .os-app-stage { grid-area: stage; display: flex; justify-content: center; align-items: center; padding: 20px; }
+  .os-nav-dock { grid-area: dock; display: flex; justify-content: center; align-items: center; }
+</style>
