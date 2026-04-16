@@ -1,4 +1,6 @@
 ---
+// src/pages/index.astro
+// CANONICAL EDITION: The Spirit Domain Main Stage
 import CanvasFrame from '../components/CanvasFrame.astro';
 import TriuneStatus from '../components/atoms/TriuneStatus';
 import NavDock from '../components/atoms/NavDock';
@@ -13,7 +15,7 @@ import NavDock from '../components/atoms/NavDock';
     <div class="glass-shield">
       
       <div class="logo-wrapper">
-        <img src="/assets/images/logo.svg" alt="Doctor Bambu Logo" class="db-logo" />
+        <img src="/assets/images/doctorbambu-com-logo.svg" alt="Doctor Bambu Logo" class="db-logo" />
       </div>
 
       <h1 class="imperial-title">Welcome to Doctor Bambu' Web App</h1>
@@ -51,7 +53,12 @@ import NavDock from '../components/atoms/NavDock';
   }
 
   .logo-wrapper { margin-bottom: 2rem; }
-  .db-logo { width: 100px; height: auto; }
+  
+  .db-logo { 
+    width: 100px; 
+    height: auto; 
+    filter: drop-shadow(0 0 8px rgba(155, 126, 75, 0.15));
+  }
 
   .imperial-title {
     font-family: serif;
@@ -61,13 +68,18 @@ import NavDock from '../components/atoms/NavDock';
     line-height: 1.2;
   }
 
-  .divider { width: 100px; height: 1px; background: var(--imperial-gold); margin: 2rem auto; }
+  .divider { 
+    width: 100px; height: 1px; 
+    background: var(--imperial-gold); 
+    margin: 2rem auto; 
+  }
 
   .spirit-subtitle {
     color: var(--imperial-gold);
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 1.5rem;
+    font-family: serif;
   }
 
   .ecosystem-tag {
@@ -77,12 +89,15 @@ import NavDock from '../components/atoms/NavDock';
     text-transform: uppercase;
     letter-spacing: 0.12rem;
     line-height: 1.8;
+    margin: 0;
   }
 
+  /* MOBILE OPTIMIZATION */
   @media (max-width: 600px) {
     .glass-shield { width: 85%; padding: 2rem 1rem; }
     .imperial-title { font-size: 1.4rem; }
     .spirit-subtitle { font-size: 1.1rem; }
-    .ecosystem-tag { font-size: 0.65rem; }
+    .ecosystem-tag { font-size: 0.65rem; letter-spacing: 0.08rem; }
+    .db-logo { width: 70px; }
   }
 </style>

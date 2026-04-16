@@ -1,10 +1,11 @@
 ---
 // src/components/CanvasFrame.astro
+// CANONICAL EDITION: Full Frame Logic with Responsive Guardians
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/doctorbambu-com-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>Doctor Bambu - Bambu Grove OS</title>
@@ -12,13 +13,16 @@
   <body>
     <div class="os-viewport">
       <div class="os-skin-layer"></div>
+
       <div class="os-ui-layer">
         <header class="os-status-bar">
           <slot name="status-bar" />
         </header>
+
         <main class="os-app-stage">
           <slot name="main-stage" />
         </main>
+
         <footer class="os-nav-dock">
           <slot name="nav-dock" />
         </footer>
@@ -44,6 +48,7 @@
   .os-viewport {
     position: relative;
     width: 100vw; height: 100vh;
+    background-color: var(--parchment-base);
   }
 
   .os-skin-layer {
@@ -65,9 +70,10 @@
     display: grid;
     grid-template-rows: 60px 1fr 100px;
     grid-template-areas: "status" "stage" "dock";
+    background: transparent;
   }
 
   .os-status-bar { grid-area: status; padding: 0 20px; display: flex; align-items: center; justify-content: flex-end; }
   .os-app-stage { grid-area: stage; display: flex; justify-content: center; align-items: center; padding: 20px; }
-  .os-nav-dock { grid-area: dock; display: flex; justify-content: center; align-items: center; }
+  .os-nav-dock { grid-area: dock; display: flex; justify-content: center; align-items: center; padding-bottom: 10px; }
 </style>
